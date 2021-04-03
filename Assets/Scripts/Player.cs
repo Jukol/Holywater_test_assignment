@@ -1,12 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class Player : MonoBehaviour
 {
-    public static event Action OnPickup;
-    
+    public static Action CoinUpdate;
+    public int myCoins { get; private set; } = 0;
 
-    
+    private void OnEnable()
+    {
+        Coin.OnPickup += AddCoins;
+    }
+
+    private void OnDisable()
+    {
+        Coin.OnPickup -= AddCoins;
+    }
+    private void AddCoins()
+    {
+        myCoins++;
+        CoinUpdate?.Invoke();
+    }
 }

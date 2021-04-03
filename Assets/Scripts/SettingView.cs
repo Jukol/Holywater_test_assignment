@@ -32,7 +32,6 @@ public class SettingView : MonoBehaviour
     private void OnMusicChange(bool newValue)
     {
         AudioManager.Instance.ToggleMusic();
-        
     }
 
     private void OnSfxChange(bool newValue)

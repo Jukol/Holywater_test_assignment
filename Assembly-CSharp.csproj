@@ -321,6 +321,7 @@
     <Compile Include="Assets\Doozy\Engine\Themes\Targets\SpriteTargetUnityEvent.cs" />
     <Compile Include="Assets\Doozy\Engine\UI\UIToggle\UIToggleState.cs" />
     <Compile Include="Assets\Doozy\Engine\UI\Base\ListOfNames.cs" />
+    <Compile Include="Assets\Scripts\CoinPool.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

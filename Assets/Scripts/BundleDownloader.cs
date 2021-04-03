@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using System;
@@ -8,7 +7,6 @@ using UnityEngine.UI;
 public class BundleDownloader : MonoBehaviour
 {
     public static bool canStart;
-    private float _downloadDataProgress;
 
     [SerializeField] GameObject _downloadingBar;
     [SerializeField] Image _progressBar;
@@ -18,6 +16,7 @@ public class BundleDownloader : MonoBehaviour
 
     private uint _version;
     private AssetBundle bundle;
+    private float _downloadDataProgress;
 
     private void OnEnable()
     {

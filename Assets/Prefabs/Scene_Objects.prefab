@@ -762,6 +762,7 @@ GameObject:
   - component: {fileID: 3647641775753366872}
   - component: {fileID: 3013332805454084784}
   - component: {fileID: 7601075594532158657}
+  - component: {fileID: 3594813013208655183}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1256,6 +1257,18 @@ MonoBehaviour:
   lastSrcRotation: {x: 0, y: 0, z: 0, w: 1}
   wpsDropdown: 0
   dropToFloorOffset: 0
+--- !u!114 &3594813013208655183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178164251409831973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f86c76284a43148802652b1b35680d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2184628625965191277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,7 +5939,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 0}
 --- !u!114 &498287672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6135,6 +6147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinsNumberText: {fileID: 1821710581231628838}
+  _player: {fileID: 3594813013208655183}
 --- !u!1 &8275758997843528117
 GameObject:
   m_ObjectHideFlags: 0

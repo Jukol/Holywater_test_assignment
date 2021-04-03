@@ -498,7 +498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rectTransform: {fileID: 392027170}
-  _mainMenu: {fileID: 729362899}
   _canvas: {fileID: 924893892}
   _moveTime: 0.5
 --- !u!114 &392027174

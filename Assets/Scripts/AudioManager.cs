@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour
             return _instance;
         }
     }
-
     private void Awake()
     {
         if (_instance == null)
@@ -27,7 +26,6 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-
     [SerializeField] private AudioClip _buttonSound;
     [SerializeField] private AudioClip _toggleSound;
     [SerializeField] private AudioClip _menuMusic;
@@ -38,7 +36,6 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        //TurnMenuMusicOn();
         if (PlayerPrefs.GetInt("SFX", 1) == 1)
         {
             _sfxOn = true;
@@ -175,5 +172,4 @@ public class AudioManager : MonoBehaviour
         _musicSource.clip = _gameMusic;
         _musicSource.Play();
     }
-
 }

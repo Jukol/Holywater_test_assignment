@@ -1,30 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
     [SerializeField] private Text _coinsNumberText;
-    private int _coinsNumber;
+    [SerializeField] private Player _player;
 
     private void OnEnable()
     {
-        Coin.OnPickup += CoinCounter;
+        Player.CoinUpdate += UIUpdate;
     }
 
     private void OnDisable()
     {
-        Coin.OnPickup -= CoinCounter;
+        Player.CoinUpdate -= UIUpdate;
     }
+
     private void Start()
     {
-        _coinsNumber = 0;
-        _coinsNumberText.text = "0";
+        _coinsNumberText.text = _player.myCoins.ToString();
     }
-    private void CoinCounter()
+    private void UIUpdate()
     {
-        _coinsNumber++;
-        _coinsNumberText.text = _coinsNumber.ToString();
+        _coinsNumberText.text = _player.myCoins.ToString();
     }
 }

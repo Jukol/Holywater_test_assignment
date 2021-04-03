@@ -7,8 +7,8 @@ public class CoinSpawner : MonoBehaviour
     [SerializeField] GameObject _coinPrefab;
     [SerializeField] private float _height = 15f;
     [SerializeField] private float _spawnRate = 0.1f;
-    private WaitForSeconds _spawnRateYield;
 
+    private WaitForSeconds _spawnRateYield;
     private void Start()
     {
         _spawnRateYield = new WaitForSeconds(_spawnRate);
@@ -17,17 +17,14 @@ public class CoinSpawner : MonoBehaviour
 
     private IEnumerator SpawnProcedure()
     {
-
         while (true)
         {
             if (BundleDownloader.canStart)
-            {
-                
+            {   
                 SpawnCoins();
             }
 
             yield return _spawnRateYield;
-
         }
     }
 
@@ -37,6 +34,9 @@ public class CoinSpawner : MonoBehaviour
         float z = Random.Range(-30f, 30f);
 
         Vector3 randomPosition = new Vector3(x, _height, z);
-        GameObject coin = Instantiate(_coinPrefab, randomPosition, Quaternion.Euler(0, 90, 90));
+        //Instantiate(_coinPrefab, randomPosition, Quaternion.Euler(0, 90, 90));
+        GameObject coin = CoinPool.Instance.CoinRequest();
+        coin.transform.position = randomPosition;
+        coin.transform.rotation = Quaternion.Euler(0, 90, 90);
     }
 }

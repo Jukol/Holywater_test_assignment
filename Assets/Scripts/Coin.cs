@@ -49,7 +49,7 @@ public class Coin : MonoBehaviour
             OnPickup?.Invoke();
             DeactivateCoin();
         }
-        else if (other.CompareTag("Ground"))
+        else if (other.gameObject.name == "Ground")
         {
             _rigidBody.useGravity = false;
             _rigidBody.isKinematic = true;

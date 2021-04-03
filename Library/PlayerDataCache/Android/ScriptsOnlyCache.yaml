@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AudioManager
     - BundleDownloader
     - Coin
+    - CoinPool
     - CoinSpawner
     - Doozy.Engine.Nody.NodySettings
     - Doozy.Engine.Settings.DoozySettings
@@ -112,63 +113,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13002}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 13268}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13368}
     - Class: 114
-      Script: {instanceID: 13494}
+      Script: {instanceID: 13496}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 13602}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 13668}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13772}
     - Class: 114
-      Script: {instanceID: 13962}
+      Script: {instanceID: 13964}
     - Class: 114
-      Script: {instanceID: 13986}
+      Script: {instanceID: 13988}
     - Class: 114
-      Script: {instanceID: 14024}
+      Script: {instanceID: 14026}
     - Class: 114
-      Script: {instanceID: 14028}
+      Script: {instanceID: 14030}
     - Class: 114
-      Script: {instanceID: 14034}
+      Script: {instanceID: 14036}
     - Class: 114
-      Script: {instanceID: 14044}
+      Script: {instanceID: 14046}
     - Class: 114
-      Script: {instanceID: 14050}
+      Script: {instanceID: 14052}
     - Class: 114
-      Script: {instanceID: 14114}
+      Script: {instanceID: 14116}
     - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 14368}
+      Script: {instanceID: 14370}
     - Class: 114
-      Script: {instanceID: 14466}
+      Script: {instanceID: 14468}
     - Class: 114
-      Script: {instanceID: 14544}
+      Script: {instanceID: 14546}
     - Class: 114
-      Script: {instanceID: 14634}
+      Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 14676}
+      Script: {instanceID: 14678}
     - Class: 114
-      Script: {instanceID: 14732}
+      Script: {instanceID: 14734}
     - Class: 114
-      Script: {instanceID: 14752}
+      Script: {instanceID: 14754}
     - Class: 114
-      Script: {instanceID: 14780}
+      Script: {instanceID: 14782}
     - Class: 114
-      Script: {instanceID: 14950}
+      Script: {instanceID: 14952}
     - Class: 114
-      Script: {instanceID: 14966}
+      Script: {instanceID: 14968}
     - Class: 114
-      Script: {instanceID: 15078}
+      Script: {instanceID: 15080}
     - Class: 114
-      Script: {instanceID: 15102}
+      Script: {instanceID: 15104}
     - Class: 114
-      Script: {instanceID: 15224}
+      Script: {instanceID: 15226}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -233,13 +234,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12924}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 14466}
+      Script: {instanceID: 14318}
     - Class: 114
-      Script: {instanceID: 15078}
+      Script: {instanceID: 14468}
+    - Class: 114
+      Script: {instanceID: 15080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -697,6 +700,12 @@ ScriptsOnlyBuild:
     className: UnloadSceneNode
   - hash:
       serializedVersion: 2
+      Hash: a4e75e9d6e44426682cd204c26095c6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinPool
+  - hash:
+      serializedVersion: 2
       Hash: 1e11aa27a6e812df11ae8d908a0dfc24
     assemblyName: Assembly-CSharp.dll
     namespaceName: Doozy.Engine.Progress
@@ -889,7 +898,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: f253b3bb156f6c0a4e8aefe85de8ceaf
+      Hash: 8be5891e16d1fda9ad5a709683070bec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsMenu
@@ -1069,7 +1078,7 @@ ScriptsOnlyBuild:
     className: ColorTargetImage
   - hash:
       serializedVersion: 2
-      Hash: 4e7cfcfa7203c189256d6352b8b25e9c
+      Hash: 2eb9b7d6149e22093e2bd372c5bd928f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Coin
@@ -1231,7 +1240,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 00589a58b460fed4a2f39a450048da32
+      Hash: 032bddcc96376d68ad37f15f4731ba1d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameUI
@@ -1401,4 +1410,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Scene_1.unity
   - Assets/Scenes/Scene_3.unity
-  playerPath: D:/_JOBS/Holywater/Yukhymenko_test_project_Android_build_02.apk
+  playerPath: D:/_JOBS/Holywater/_TO_SEND/Yukhymenko_test_project_Android_build_04.apk
